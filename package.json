@@ -1,0 +1,17 @@
+{
+  "name": "data_structure_in_javascript",
+  "version": "1.0.0",
+  "description": "This is my first attempt to learn data structure and convert then into javascript function",
+  "main": "index.js",
+  "scripts": {
+    "test12": "./node_modules/.bin/jasmine-node  --captureExceptions --harmony ./spec/",
+    "test": "./node_modules/.bin/jasmine"
+  },
+  "author": "Hemant Thard",
+  "license": "ISC",
+  "dependencies": {
+    "babel-preset-es2015": "^6.14.0",
+    "babel-register": "^6.14.0",
+    "jasmine-node": "1.9.0"
+  }
+}

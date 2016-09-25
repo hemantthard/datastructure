@@ -1,4 +1,4 @@
-import LinkedList from './../../src/LinkedList' ;
+import LinkedList from './../../../src/linkedList/LinkedList' ;
 
 describe('Linked List Implementation ::: ',function(){
 	describe('function addFirst ::: ',function() {
@@ -187,6 +187,41 @@ describe('Linked List Implementation ::: ',function(){
 			this.linkedList.add('b',0) ;
 			this.linkedList.add('c',0) ;
 			expect(this.linkedList.remove(1)).toBe('b') ;
+		});
+	});
+
+
+	describe('function getElementAtPosition ::: ',function(){
+
+		beforeEach(function(){
+			this.linkedList = new LinkedList() ;
+		});
+
+		it('return null when no element is present in list',function(){
+			expect(this.linkedList.getElementAtPosition(0)).toBe(null) ;
+		});
+
+		it('return element when one element is present in the list ',function(){
+			this.linkedList.add('a',0) ;
+			expect(this.linkedList.getElementAtPosition(0)).toBe('a') ;
+		});
+
+		it('element first element when two elements are present in the list ',function(){
+			this.linkedList.add('a') ;
+			this.linkedList.add('b') ;
+			expect(this.linkedList.getElementAtPosition(0)).toBe('a') ;
+		});
+
+		it('element second element when two elements are present in the list ',function(){
+			this.linkedList.add('a') ;
+			this.linkedList.add('b') ;
+			expect(this.linkedList.getElementAtPosition(1)).toBe('b') ;
+		});
+
+		it('return null when position is more then number of element specified in the list',function(){
+			this.linkedList.add('a') ;
+			this.linkedList.add('b') ;
+			expect(this.linkedList.getElementAtPosition(2)).toBe(null) ;
 		});
 	});
 	

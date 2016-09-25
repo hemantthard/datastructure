@@ -1,5 +1,5 @@
-import Utils from "./utils" ;
-import Node from "./singleEndedNode"
+import Utils from "./../utils" ;
+import Node from "./../singleEndedNode"
 
 
 function LinkedList(){

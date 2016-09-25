@@ -161,6 +161,39 @@ describe("A suite to validate Utility function ", function() {
 		    expect(Utils.isNumber(function(){})).toBe(false);
 		});
 
+	}) ;
+
+
+	describe('Validate isArray function' , function(){
+		it("if input is a string, isArray should return false ", function() {
+		    expect(Utils.isArray("12")).toBe(false);
+		});
+
+		it("if input is an argument, isArray should return false", function() {
+		    expect(Utils.isArray(arguments)).toBe(false);
+		});
+
+		it("if input is array, isArray should return true", function() {
+		    expect(Utils.isArray([])).toBe(true);
+		});
+
+		it("if input is Array object, isArray should return true", function() {
+		    expect(Utils.isArray(new Array())).toBe(true);
+		});
+
+		it("if input is undefined, isArray should return false", function() {
+		    expect(Utils.isArray(undefined)).toBe(false);
+		});
+
+		it("if input is null, isArray should return false", function() {
+		    expect(Utils.isArray(null)).toBe(false);
+		});
+
+		it("if input is an object, isArray should return false", function() {
+		    expect(Utils.isArray({})).toBe(false);
+		});
+
 	})
+
   
 });

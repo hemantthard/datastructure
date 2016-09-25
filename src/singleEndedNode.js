@@ -1,10 +1,10 @@
-function Node(element){
+function Node(element, nextNode = null){
 	this.__element = element ;
-	this.__nextNode = null ;
+	this.__nextNode = nextNode ;
 }
 
 Node.prototype.hasReferenceToNextNode =function(){
-	return !!this.__nextNode ;
+	return this.__nextNode != null ;
 }
 
 Node.prototype.setNextNode =function(nextNode){

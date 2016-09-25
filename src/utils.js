@@ -18,10 +18,15 @@ function getNumber(element) {
 	return Number(element) ;
 }
 
+function isArray(element) {
+	return Array.isArray(element);
+}
+
 export default {
 	isNumber : isNumber ,
 	isUndefined : isUndefined ,
 	isNull : isNull ,
 	isEmpty : isEmpty,
-	getNumber : getNumber 
+	getNumber : getNumber ,
+	isArray : isArray 
 }

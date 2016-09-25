@@ -4,7 +4,6 @@
   "description": "This is my first attempt to learn data structure and convert then into javascript function",
   "main": "index.js",
   "scripts": {
-    "test12": "./node_modules/.bin/jasmine-node  --captureExceptions --harmony ./spec/",
     "test": "./node_modules/.bin/jasmine"
   },
   "author": "Hemant Thard",
